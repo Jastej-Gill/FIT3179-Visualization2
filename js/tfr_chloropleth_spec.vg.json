@@ -5,13 +5,13 @@
     "height": 400,
     "projection": {"type": "equalEarth"},
     "data": {
-      "url": "https://raw.githubusercontent.com/Jastej-Gill/FIT3179-Visualization2/refs/heads/main/data/filtered_fertility_rates.csv",
-      "format": {"type": "csv"}
+      "url": "https://raw.githubusercontent.com/Jastej-Gill/FIT3179-Visualization2/refs/heads/main/js/ne_1.json",
+      "format": {"type": "topojson", "feature": "ne_malaysia_10m"}
     },
     "transform": [
       {"filter": "datum.year == 2022"},
       {
-        "lookup": "properties.NAME",
+        "lookup": "properties.name",
         "from": {
           "data": {
             "url": "https://raw.githubusercontent.com/Jastej-Gill/FIT3179-Visualization2/refs/heads/main/data/filtered_fertility_rates.csv",
@@ -30,7 +30,7 @@
         "scale": {"type": "linear"}
       },
       "tooltip": [
-        {"field": "properties.NAME", "type": "nominal", "title": "State"},
+        {"field": "properties.name", "type": "nominal", "title": "State"},
         {"field": "fertility_rate", "type": "quantitative", "title": "Fertility Rate"}
       ]
     }
