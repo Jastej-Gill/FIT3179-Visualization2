@@ -1,0 +1,192 @@
+state,year,ep_ratio
+Johor,2010,42.2
+Johor,2011,43.9
+Johor,2012,43.7
+Johor,2013,49.0
+Johor,2014,48.8
+Johor,2015,48.3
+Johor,2016,47.1
+Johor,2017,47.1
+Johor,2018,51.5
+Johor,2019,54.3
+Johor,2020,47.2
+Johor,2021,46.0
+Kedah,2010,39.9
+Kedah,2011,40.6
+Kedah,2012,43.1
+Kedah,2013,47.1
+Kedah,2014,49.0
+Kedah,2015,50.1
+Kedah,2016,49.3
+Kedah,2017,50.4
+Kedah,2018,49.2
+Kedah,2019,48.3
+Kedah,2020,47.7
+Kedah,2021,49.1
+Kelantan,2010,40.6
+Kelantan,2011,40.8
+Kelantan,2012,43.0
+Kelantan,2013,44.6
+Kelantan,2014,46.8
+Kelantan,2015,47.0
+Kelantan,2016,43.0
+Kelantan,2017,46.1
+Kelantan,2018,44.0
+Kelantan,2019,42.2
+Kelantan,2020,43.3
+Kelantan,2021,43.6
+Melaka,2010,45.6
+Melaka,2011,46.8
+Melaka,2012,48.3
+Melaka,2013,52.2
+Melaka,2014,54.5
+Melaka,2015,54.2
+Melaka,2016,52.7
+Melaka,2017,52.4
+Melaka,2018,55.2
+Melaka,2019,55.6
+Melaka,2020,52.6
+Melaka,2021,55.3
+Negeri Sembilan,2010,41.4
+Negeri Sembilan,2011,42.9
+Negeri Sembilan,2012,46.4
+Negeri Sembilan,2013,49.3
+Negeri Sembilan,2014,48.5
+Negeri Sembilan,2015,48.6
+Negeri Sembilan,2016,48.8
+Negeri Sembilan,2017,48.1
+Negeri Sembilan,2018,50.5
+Negeri Sembilan,2019,48.7
+Negeri Sembilan,2020,48.8
+Negeri Sembilan,2021,44.6
+Pahang,2010,41.1
+Pahang,2011,40.4
+Pahang,2012,42.0
+Pahang,2013,45.2
+Pahang,2014,48.0
+Pahang,2015,49.3
+Pahang,2016,48.4
+Pahang,2017,46.0
+Pahang,2018,47.3
+Pahang,2019,46.5
+Pahang,2020,49.7
+Pahang,2021,48.3
+Perak,2010,38.6
+Perak,2011,41.0
+Perak,2012,41.0
+Perak,2013,40.9
+Perak,2014,42.4
+Perak,2015,44.1
+Perak,2016,44.1
+Perak,2017,46.3
+Perak,2018,47.4
+Perak,2019,46.3
+Perak,2020,50.5
+Perak,2021,49.5
+Perlis,2010,33.7
+Perlis,2011,34.2
+Perlis,2012,38.0
+Perlis,2013,42.4
+Perlis,2014,41.7
+Perlis,2015,42.8
+Perlis,2016,44.2
+Perlis,2017,43.1
+Perlis,2018,45.5
+Perlis,2019,50.4
+Perlis,2020,40.4
+Perlis,2021,39.4
+Pulau Pinang,2010,54.7
+Pulau Pinang,2011,56.3
+Pulau Pinang,2012,55.3
+Pulau Pinang,2013,56.3
+Pulau Pinang,2014,60.3
+Pulau Pinang,2015,57.7
+Pulau Pinang,2016,56.0
+Pulau Pinang,2017,53.7
+Pulau Pinang,2018,54.0
+Pulau Pinang,2019,52.8
+Pulau Pinang,2020,55.0
+Pulau Pinang,2021,56.4
+Sabah,2010,42.6
+Sabah,2011,43.5
+Sabah,2012,45.0
+Sabah,2013,48.9
+Sabah,2014,49.7
+Sabah,2015,48.7
+Sabah,2016,51.0
+Sabah,2017,46.6
+Sabah,2018,46.3
+Sabah,2019,50.2
+Sabah,2020,63.6
+Sabah,2021,63.6
+Sarawak,2010,47.4
+Sarawak,2011,46.3
+Sarawak,2012,51.7
+Sarawak,2013,51.2
+Sarawak,2014,53.2
+Sarawak,2015,50.6
+Sarawak,2016,48.8
+Sarawak,2017,50.2
+Sarawak,2018,49.6
+Sarawak,2019,49.7
+Sarawak,2020,54.5
+Sarawak,2021,55.8
+Selangor,2010,50.8
+Selangor,2011,52.5
+Selangor,2012,55.3
+Selangor,2013,57.8
+Selangor,2014,58.8
+Selangor,2015,61.2
+Selangor,2016,62.4
+Selangor,2017,66.1
+Selangor,2018,67.9
+Selangor,2019,68.8
+Selangor,2020,67.1
+Selangor,2021,67.5
+Terengganu,2010,38.9
+Terengganu,2011,41.6
+Terengganu,2012,40.0
+Terengganu,2013,42.4
+Terengganu,2014,42.1
+Terengganu,2015,42.4
+Terengganu,2016,41.6
+Terengganu,2017,41.9
+Terengganu,2018,41.7
+Terengganu,2019,43.9
+Terengganu,2020,44.6
+Terengganu,2021,43.4
+W.P. Kuala Lumpur,2010,52.5
+W.P. Kuala Lumpur,2011,54.5
+W.P. Kuala Lumpur,2012,53.5
+W.P. Kuala Lumpur,2013,59.3
+W.P. Kuala Lumpur,2014,56.4
+W.P. Kuala Lumpur,2015,55.3
+W.P. Kuala Lumpur,2016,53.3
+W.P. Kuala Lumpur,2017,53.0
+W.P. Kuala Lumpur,2018,52.7
+W.P. Kuala Lumpur,2019,56.0
+W.P. Kuala Lumpur,2020,54.9
+W.P. Kuala Lumpur,2021,55.4
+W.P. Labuan,2010,45.3
+W.P. Labuan,2011,45.3
+W.P. Labuan,2012,45.1
+W.P. Labuan,2013,46.3
+W.P. Labuan,2014,45.5
+W.P. Labuan,2015,42.2
+W.P. Labuan,2016,42.6
+W.P. Labuan,2017,38.2
+W.P. Labuan,2018,43.7
+W.P. Labuan,2019,41.0
+W.P. Labuan,2020,49.7
+W.P. Labuan,2021,53.6
+W.P. Putrajaya,2011,77.6
+W.P. Putrajaya,2012,76.6
+W.P. Putrajaya,2013,77.7
+W.P. Putrajaya,2014,79.0
+W.P. Putrajaya,2015,74.4
+W.P. Putrajaya,2016,72.5
+W.P. Putrajaya,2017,70.2
+W.P. Putrajaya,2018,62.6
+W.P. Putrajaya,2019,55.9
+W.P. Putrajaya,2020,56.6
+W.P. Putrajaya,2021,57.5
