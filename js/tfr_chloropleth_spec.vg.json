@@ -1,0 +1,38 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Total Fertility Rate in Each State (2022)",
+    "width": 800,
+    "height": 400,
+    "projection": {"type": "equalEarth"},
+    "data": {
+      "url": "https://raw.githubusercontent.com/Jastej-Gill/FIT3179-Visualization2/refs/heads/main/data/filtered_fertility_rates.csv",
+      "format": {"type": "csv"}
+    },
+    "transform": [
+      {"filter": "datum.year == 2022"},
+      {
+        "lookup": "properties.NAME",
+        "from": {
+          "data": {
+            "url": "https://raw.githubusercontent.com/Jastej-Gill/FIT3179-Visualization2/refs/heads/main/data/filtered_fertility_rates.csv",
+            "format": {"type": "csv"}
+          },
+          "key": "state",
+          "fields": ["fertility_rate"]
+        }
+      }
+    ],
+    "mark": {"type": "geoshape"},
+    "encoding": {
+      "color": {
+        "field": "fertility_rate",
+        "type": "quantitative",
+        "scale": {"type": "linear"}
+      },
+      "tooltip": [
+        {"field": "properties.NAME", "type": "nominal", "title": "State"},
+        {"field": "fertility_rate", "type": "quantitative", "title": "Fertility Rate"}
+      ]
+    }
+  }
+  
