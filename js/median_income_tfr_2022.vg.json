@@ -1,0 +1,55 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A dual axis stacked area chart comparing median income and fertility rate in 2022",
+  "width": 900,
+  "height": 600,
+  "data": {
+    "url": "https://raw.githubusercontent.com/Jastej-Gill/FIT3179-Visualization2/refs/heads/main/data/median_income_fertility_rate_2022.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {"filter": "datum.state != ''"},
+    {"calculate": "toNumber(datum.median_income)", "as": "median_income_numeric"}
+  ],
+  "encoding": {
+    "x": {
+      "field": "state",
+      "type": "nominal",
+      "title": "State",
+      "sort": {"field": "median_income_numeric", "order": "descending"}
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "area", "color": "#FF5733", "opacity": 0.7},
+      "encoding": {
+        "y": {
+          "field": "median_income_numeric",
+          "type": "quantitative",
+          "title": "Median Income (MYR)",
+          "axis": {"titleColor": "#FF5733"}
+        },
+        "tooltip": [
+          {"field": "state", "type": "nominal", "title": "State"},
+          {"field": "median_income_numeric", "type": "quantitative", "title": "Median Income (MYR)"}
+        ]
+      }
+    },
+    {
+      "mark": {"type": "area", "color": "#33C3FF", "opacity": 0.7},
+      "encoding": {
+        "y": {
+          "field": "fertility_rate",
+          "type": "quantitative",
+          "title": "Fertility Rate",
+          "axis": {"titleColor": "#33C3FF", "orient": "right"}
+        },
+        "tooltip": [
+          {"field": "state", "type": "nominal", "title": "State"},
+          {"field": "fertility_rate", "type": "quantitative", "title": "Fertility Rate"}
+        ]
+      }
+    }
+  ],
+  "resolve": {"scale": {"y": "independent"}}
+}
