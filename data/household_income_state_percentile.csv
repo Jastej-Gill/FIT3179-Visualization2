@@ -1,4 +1,4 @@
-state,year,min,second_quartile,median,third_quartile,max
+state,year,min,first_quartile,median,third_quartile,max
 Selangor,2022,2200,6314,9902,14141,74238
 Putrajaya,2022,3225,6969,9993,15079,67740
 Johor,2022,1197,4278,6826,10603,41435
