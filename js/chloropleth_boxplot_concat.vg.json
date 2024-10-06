@@ -29,7 +29,8 @@
           "color": {
             "field": "fertility_rate",
             "type": "quantitative",
-            "scale": {"type": "linear"}
+            "scale": {"type": "linear"},
+            "title": "Fertility Rate"
           },
           "tooltip": [
             {"field": "properties.name", "type": "nominal", "title": "State"},
