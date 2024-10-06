@@ -1,100 +1,130 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Household Income in Each State (2022)",
-    "width": 800,
-    "height": 1000,
-    "data": {
-      "url": "https://raw.githubusercontent.com/Jastej-Gill/FIT3179-Visualization2/refs/heads/main/data/household_income_state_percentile.csv",
-      "format": {"type": "csv"}
-    },
-    "transform": [
-      {"filter": "datum.year == 2022"},
-      {"calculate": "toNumber(datum.median)", "as": "median_numeric"},
-      {
-        "lookup": "state",
-        "from": {
-          "data": {
-            "url": "https://raw.githubusercontent.com/Jastej-Gill/FIT3179-Visualization2/refs/heads/main/data/state_population_2022.csv",
-            "format": {"type": "csv"}
-          },
-          "key": "state",
-          "fields": ["population"]
-        }
-      },
-      {"window": [{"op": "rank", "as": "rank"}], "sort": [{"field": "median_numeric", "order": "descending"}]}
-    ],
-    "encoding": {
-      "y": {
-        "field": "state",
-        "type": "nominal",
-        "title": "State",
-        "sort": {"field": "rank"}
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Household Income in Each State (2022)",
+  "width": 900,
+  "height": 900,
+  "data": {
+    "url": "https://raw.githubusercontent.com/Jastej-Gill/FIT3179-Visualization2/refs/heads/main/data/household_income_state_percentile.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {"filter": "datum.year == 2022"},
+    {"calculate": "toNumber(datum.median)", "as": "median_numeric"},
+    {
+      "lookup": "state",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/Jastej-Gill/FIT3179-Visualization2/refs/heads/main/data/state_population_2022.csv",
+          "format": {"type": "csv"}
+        },
+        "key": "state",
+        "fields": ["population"]
       }
     },
-    "layer": [
-      {
-        "mark": {"type": "rule"},
-        "encoding": {
-          "x": {"field": "min", "type": "quantitative", "scale": {"zero": false}, "title": "Income (MYR)"},
-          "x2": {"field": "max"},
-          "tooltip": [
-            {"field": "min", "type": "quantitative", "title": "Min Income (MYR)"},
-            {"field": "max", "type": "quantitative", "title": "Max Income (MYR)"},
-            {"field": "population", "type": "quantitative", "title": "Population (in thousands)"}
-          ]
-        }
-      },
-      {
-        "mark": {"type": "bar"},
-        "params": [{
-          "name": "state_select",
-          "select": {"type": "point", "fields": ["state"]},
-          "bind": "legend"
-        }],
-        "encoding": {
-          "x": {"field": "first_quartile", "type": "quantitative"},
-          "x2": {"field": "third_quartile"},
-          "color": {"field": "state", "type": "nominal", "legend": {"title": "State"}},
-          "opacity": {
-            "condition": {"param": "state_select", "value": 1},
-            "value": 0.2
-          },
-          "size": {"field": "population", "type": "quantitative", "title": "Population (in thousands)", "scale": {"range": [10, 50]}},
-          "tooltip": [
-            {"field": "first_quartile", "type": "quantitative", "title": "1st Quartile (MYR)"},
-            {"field": "third_quartile", "type": "quantitative", "title": "3rd Quartile (MYR)"},
-            {"field": "population", "type": "quantitative", "title": "Population (in thousands)"}
-          ]
-        }
-      },
-      {
-        "mark": {"type": "tick", "color": "white", "size": 50},
-        "encoding": {
-          "x": {"field": "median_numeric", "type": "quantitative"},
-          "tooltip": [
-            {"field": "median_numeric", "type": "quantitative", "title": "Median Income (MYR)"},
-            {"field": "population", "type": "quantitative", "title": "Population (in thousands)"}
-          ]
-        }
-      },
-      {
-        "mark": {"type": "point", "color": "black", "size": 50},
-        "encoding": {
-          "x": {"field": "min", "type": "quantitative"},
-          "tooltip": [
-            {"field": "min", "type": "quantitative", "title": "Min Income (MYR)"}
-          ]
-        }
-      },
-      {
-        "mark": {"type": "point", "color": "black", "size": 50},
-        "encoding": {
-          "x": {"field": "max", "type": "quantitative"},
-          "tooltip": [
-            {"field": "max", "type": "quantitative", "title": "Max Income (MYR)"}
-          ]
-        }
+    {"window": [{"op": "rank", "as": "rank"}], "sort": [{"field": "median_numeric", "order": "descending"}]}
+  ],
+  "encoding": {
+    "y": {
+      "field": "state",
+      "type": "nominal",
+      "title": "State",
+      "sort": {"field": "rank"}
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "rule"},
+      "encoding": {
+        "x": {"field": "min", "type": "quantitative", "scale": {"zero": false}, "title": "Income (MYR)"},
+        "x2": {"field": "max"},
+        "tooltip": [
+          {"field": "min", "type": "quantitative", "title": "Min Income (MYR)"},
+          {"field": "max", "type": "quantitative", "title": "Max Income (MYR)"},
+          {"field": "population", "type": "quantitative", "title": "Population (in thousands)"}
+        ]
       }
-    ]
-  }
-  
+    },
+    {
+      "mark": {"type": "bar"},
+      "params": [{
+        "name": "state_select",
+        "select": {"type": "point", "fields": ["state"]},
+        "bind": "legend"
+      }],
+      "encoding": {
+        "x": {"field": "first_quartile", "type": "quantitative"},
+        "x2": {"field": "third_quartile"},
+        "color": {"field": "state", "type": "nominal", "legend": {"title": "State"}},
+        "opacity": {
+          "condition": {"param": "state_select", "value": 1},
+          "value": 0.2
+        },
+        "size": {"field": "population", "type": "quantitative", "scale": {"range": [10, 50]}, "legend": null},
+        "tooltip": [
+          {"field": "first_quartile", "type": "quantitative", "title": "1st Quartile (MYR)"},
+          {"field": "third_quartile", "type": "quantitative", "title": "3rd Quartile (MYR)"},
+          {"field": "population", "type": "quantitative", "title": "Population (in thousands)"}
+        ]
+      }
+    },
+    {
+      "mark": {"type": "tick", "color": "white", "size": 50},
+      "encoding": {
+        "x": {"field": "median_numeric", "type": "quantitative"},
+        "tooltip": [
+          {"field": "median_numeric", "type": "quantitative", "title": "Median Income (MYR)"},
+          {"field": "population", "type": "quantitative", "title": "Population (in thousands)"}
+        ]
+      }
+    },
+    {
+      "mark": {"type": "point", "color": "black", "size": 50},
+      "encoding": {
+        "x": {"field": "min", "type": "quantitative"},
+        "tooltip": [
+          {"field": "min", "type": "quantitative", "title": "Min Income (MYR)"}
+        ]
+      }
+    },
+    {
+      "mark": {"type": "point", "color": "black", "size": 50},
+      "encoding": {
+        "x": {"field": "max", "type": "quantitative"},
+        "tooltip": [
+          {"field": "max", "type": "quantitative", "title": "Max Income (MYR)"}
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "window": [{"op": "rank", "as": "ranking"}],
+          "sort": [{"field": "median_numeric", "order": "descending"}]
+        },
+        {
+          "filter": "datum.ranking == 8"
+        },
+        {
+          "calculate": "'The state with highest median income has a median income of;' + datum['median_numeric']",
+          "as": "text_annotation_raw"
+        },
+        {
+          "calculate": "split(datum.text_annotation_raw, ';')",
+          "as": "text_annotation"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 400,
+        "dy": -8,
+        "baseline": "middle",
+        "fontStyle": "italic"
+      },
+      "encoding": {
+        "x": {"field": "median_numeric", "type": "quantitative"},
+        "text": {"field": "text_annotation"}
+      }
+    }
+  ]
+}
