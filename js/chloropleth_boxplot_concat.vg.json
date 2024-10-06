@@ -15,7 +15,7 @@
             "lookup": "properties.name",
             "from": {
               "data": {
-                "url": "https://raw.githubusercontent.com/Jastej-Gill/FIT3179-Visualization2/refs/heads/main/data/filtered_fertility_rate.csv",
+                "url": "https://raw.githubusercontent.com/Jastej-Gill/FIT3179-Visualization2/refs/heads/main/data/filtered_fertility_rate.csv"
               },
               "key": "state",
               "fields": ["fertility_rate", "year"]
