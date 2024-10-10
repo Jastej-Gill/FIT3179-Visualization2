@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Household Income in Each State (2022)",
-  "width": 900,
-  "height": 900,
+  "width": 700,
+  "height": 800,
   "data": {
     "url": "https://raw.githubusercontent.com/Jastej-Gill/FIT3179-Visualization2/refs/heads/main/data/household_income_state_percentile.csv",
     "format": {"type": "csv"}
