@@ -1,18 +1,30 @@
 #symbol_map {
-	top:100px;
-	bottom: 100px; 
-	left: 100px;
-	right: 100px;
-	/*height: 1000px;
-	width: 800px;*/
+    top: 100px;
+    bottom: 100px; 
+    left: 100px;
+    right: 100px;
+    /*height: 1000px;
+    width: 800px;*/
 }
+
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #444;
 }
 
 .chart-container {
     margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .chart {
@@ -31,4 +43,15 @@ body {
 
 .clear {
     clear: both;
+}
+
+section h2 {
+    color: #555;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+section p {
+    font-size: 1em;
+    line-height: 1.6;
 }
