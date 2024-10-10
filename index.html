@@ -3,46 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vega-Lite Charts</title>
+    <title>Data Visualization</title>
+    <link rel="stylesheet" href="/css/styles.css/">
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
-    <link rel="stylesheet" href="https://raw.githubusercontent.com/Jastej-Gill/FIT3179-Visualization2/refs/heads/main/css/styles.css">
 </head>
 <body>
-    <h1>Vega-Lite Charts</h1>
-
-    <section class="chart-container">
-        <h2>Death and Fertility Rates</h2>
-        <div id="chart1" class="chart"></div>
-    </section>
-
-    <section class="chart-container">
-        <h2>Geographical Data</h2>
-        <div id="chart2" class="chart left"></div>
-        <div id="chart3" class="chart right"></div>
-        <div class="clear"></div>
-    </section>
-
-    <section class="chart-container">
-        <h2>Additional Analysis</h2>
-        <div id="chart4" class="chart right"></div>
-        <div class="left">
-            <p>Sample text content goes here. This section can be used to provide additional insights or explanations related to the charts displayed.</p>
+    <header>
+      <div class="hero-image">
+        <div class="hero-text">
+          <h1>I am John Doe</h1>
+          <p>And I'm a Photographer</p>
+          <button>Hire me</button>
         </div>
-        <div class="clear"></div>
-    </section>
+      </div>    
+    </header>
 
-    <section>
-        <h2>Conclusion</h2>
-        <p>Sample conclusion text goes here. Summarize the key findings and insights from the charts above.</p>
-    </section>
+    <main>
+        <section class="chart-container">
+            <h2>Death and Fertility Rates</h2>
+            <div id="chart1" class="chart"></div>
+        </section>
+
+        <section class="chart-container">
+            <h2>Geographical Data</h2>
+            <div id="chart2" class="chart left"></div>
+            <div id="chart3" class="chart right"></div>
+            <div class="clear"></div>
+        </section>
+
+        <section class="chart-container">
+            <h2>Additional Analysis</h2>
+            <div id="chart4" class="chart right"></div>
+            <div class="left">
+                <p>Sample text content goes here. This section can be used to provide additional insights or explanations related to the charts displayed.</p>
+            </div>
+            <div class="clear"></div>
+        </section>
+
+        <section>
+            <h2>Conclusion</h2>
+            <p>Sample conclusion text goes here. Summarize the key findings and insights from the charts above.</p>
+        </section>
+    </main>
 
     <script>
-        const chart1Url = 'https://raw.githubusercontent.com/Jastej-Gill/FIT3179-Visualization2/refs/heads/main/js/death_rate_fertility_vg.json';
-        const chart2Url = 'https://raw.githubusercontent.com/Jastej-Gill/FIT3179-Visualization2/refs/heads/main/js/tfr_chloropleth_spec.vg.json';
-        const chart3Url = 'https://raw.githubusercontent.com/Jastej-Gill/FIT3179-Visualization2/refs/heads/main/js/hh_income_boxplot.vg.json';
-        const chart4Url = 'https://raw.githubusercontent.com/Jastej-Gill/FIT3179-Visualization2/refs/heads/main/js/median_income_tfr_2022.vg.json';
+        const chart1Url = 'URL_TO_YOUR_FIRST_CHART';
+        const chart2Url = 'URL_TO_YOUR_SECOND_CHART';
+        const chart3Url = 'URL_TO_YOUR_THIRD_CHART';
+        const chart4Url = 'URL_TO_YOUR_FOURTH_CHART';
 
         vegaEmbed('#chart1', chart1Url).catch(console.error);
         vegaEmbed('#chart2', chart2Url).catch(console.error);
