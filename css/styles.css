@@ -6,3 +6,29 @@
 	/*height: 1000px;
 	width: 800px;*/
 }
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.chart-container {
+    margin-bottom: 40px;
+}
+
+.chart {
+    margin: 20px 0;
+}
+
+.left {
+    float: left;
+    width: 45%;
+}
+
+.right {
+    float: right;
+    width: 45%;
+}
+
+.clear {
+    clear: both;
+}

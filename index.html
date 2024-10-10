@@ -1,24 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
-  <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
-  
-  <!-- CSS file -->
-  <link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/Jastej-Gill/FIT3179-Visualization2/refs/heads/main/css/styles.css" media="all">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vega-Lite Charts</title>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  
-<div id="visualization"></div>
+    <h1>Vega-Lite Charts</h1>
 
-<script type="text/javascript">
-  var spec = "https://raw.githubusercontent.com/Jastej-Gill/FIT3179-Visualization2/refs/heads/main/js/chloropleth_boxplot_concat.vg.json";
-  vegaEmbed('#visualization', spec).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
-</script>
+    <section class="chart-container">
+        <h2>Death and Fertility Rates</h2>
+        <div id="chart1" class="chart"></div>
+    </section>
 
+    <section class="chart-container">
+        <h2>Geographical Data</h2>
+        <div id="chart2" class="chart left"></div>
+        <div id="chart3" class="chart right"></div>
+        <div class="clear"></div>
+    </section>
+
+    <section class="chart-container">
+        <h2>Additional Analysis</h2>
+        <div id="chart4" class="chart right"></div>
+        <div class="left">
+            <p>Text content goes here...</p>
+        </div>
+        <div class="clear"></div>
+    </section>
+
+    <section>
+        <h2>Conclusion</h2>
+        <p>Text content goes here...</p>
+    </section>
+
+    <script>
+        const chart1Url = '';
+        const chart2Url = 'URL_TO_YOUR_SECOND_CHART';
+        const chart3Url = 'URL_TO_YOUR_THIRD_CHART';
+        const chart4Url = 'URL_TO_YOUR_FOURTH_CHART';
+
+        vegaEmbed('#chart1', chart1Url).catch(console.error);
+        vegaEmbed('#chart2', chart2Url).catch(console.error);
+        vegaEmbed('#chart3', chart3Url).catch(console.error);
+        vegaEmbed('#chart4', chart4Url).catch(console.error);
+    </script>
 </body>
 </html>

@@ -1,0 +1,81 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/Jastej-Gill/FIT3179-Visualization2/refs/heads/main/data/filtered_death_state.csv"
+    },
+    "params": [
+      {
+        "name": "year",
+        "value": 2022,
+        "bind": {
+          "input": "select",
+          "options": [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022],
+          "labels": ["2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022"]
+        }
+      }
+    ],
+    "transform": [
+      {"filter": "datum.year == year"},
+      {"calculate": "toNumber(datum.death_rate)", "as": "Death"},
+      {"calculate": "toNumber(datum.fertility_rate)", "as": "Fertility"},
+      {"fold": ["Death", "Fertility"], "as": ["rate_type", "rate_value"]}
+    ],
+    "layer": [
+      {
+        "mark": "line",
+        "encoding": {
+          "x": {
+            "field": "state",
+            "type": "nominal",
+            "axis": {"title": "State"}
+          },
+          "y": {
+            "field": "rate_value",
+            "type": "quantitative",
+            "axis": {"title": "Rate"}
+          },
+          "detail": {"field": "state"},
+          "color": {"value": "grey"}
+        }
+      },
+      {
+        "mark": {"type": "point", "filled": true},
+        "encoding": {
+          "x": {
+            "field": "state",
+            "type": "nominal",
+            "axis": {"title": "State"}
+          },
+          "y": {
+            "field": "rate_value",
+            "type": "quantitative",
+            "axis": {"title": "Rate"}
+          },
+          "color": {
+            "field": "rate_type",
+            "type": "nominal",
+            "scale": {
+              "domain": ["Death", "Fertility"],
+              "range": ["red", "blue"]
+            },
+            "legend": {"title": "Rate Type"}
+          },
+          "size": {"value": 100}
+        }
+      }
+    ],
+    "title": "Death Rate vs Fertility Rate by State",
+    "width": 800,
+    "height": 400,
+    "config": {
+      "axis": {
+        "labelFontSize": 12,
+        "titleFontSize": 14
+      },
+      "legend": {
+        "titleFontSize": 14,
+        "labelFontSize": 12
+      }
+    }
+  }
+  
