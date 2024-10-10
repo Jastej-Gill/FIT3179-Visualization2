@@ -1,209 +1,209 @@
-state,year,death_rate,abs
-Johor,2010,4.8,16060
-Johor,2011,4.8,16479
-Johor,2012,5.0,17201
-Johor,2013,5.1,17696
-Johor,2014,5.0,17904
-Johor,2015,5.2,18853
-Johor,2016,5.5,19924
-Johor,2017,5.6,20662
-Johor,2018,5.6,21117
-Johor,2019,5.8,21799
-Johor,2020,5.1,20646
-Johor,2021,6.7,26951
-Johor,2022,6.3,25305
-Kedah,2010,6.0,11674
-Kedah,2011,6.0,11869
-Kedah,2012,6.1,12268
-Kedah,2013,6.1,12516
-Kedah,2014,6.3,13017
-Kedah,2015,6.5,13674
-Kedah,2016,6.5,13771
-Kedah,2017,6.7,14332
-Kedah,2018,6.7,14552
-Kedah,2019,6.6,14302
-Kedah,2020,6.4,13671
-Kedah,2021,8.6,18457
-Kedah,2022,8.1,17628
-Kelantan,2010,6.2,9798
-Kelantan,2011,6.2,10024
-Kelantan,2012,6.0,9890
-Kelantan,2013,6.0,10042
-Kelantan,2014,6.1,10588
-Kelantan,2015,6.1,10789
-Kelantan,2016,6.0,10809
-Kelantan,2017,6.1,11203
-Kelantan,2018,6.1,11316
-Kelantan,2019,6.1,11410
-Kelantan,2020,6.1,10928
-Kelantan,2021,7.7,13926
-Kelantan,2022,7.3,13445
-Melaka,2010,5.4,4481
-Melaka,2011,5.5,4606
-Melaka,2012,5.4,4575
-Melaka,2013,5.5,4747
-Melaka,2014,5.4,4728
-Melaka,2015,5.6,4959
-Melaka,2016,5.8,5186
-Melaka,2017,6.0,5523
-Melaka,2018,5.9,5407
-Melaka,2019,6.0,5547
-Melaka,2020,5.5,5444
-Melaka,2021,7.1,7083
-Melaka,2022,6.6,6630
-Pahang,2010,5.6,5814
-Pahang,2011,5.6,5885
-Pahang,2012,5.6,5895
-Pahang,2013,5.8,6213
-Pahang,2014,5.9,6410
-Pahang,2015,6.1,6611
-Pahang,2016,6.2,6810
-Pahang,2017,6.4,7111
-Pahang,2018,6.5,7298
-Pahang,2019,6.4,7168
-Pahang,2020,5.8,7011
-Pahang,2021,7.6,9165
-Pahang,2022,7.1,8636
-Negeri Sembilan,2010,5.1,7722
-Negeri Sembilan,2011,5.1,7812
-Negeri Sembilan,2012,5.0,7791
-Negeri Sembilan,2013,5.2,8146
-Negeri Sembilan,2014,5.2,8301
-Negeri Sembilan,2015,5.3,8471
-Negeri Sembilan,2016,5.5,8878
-Negeri Sembilan,2017,5.6,9261
-Negeri Sembilan,2018,5.6,9246
-Negeri Sembilan,2019,5.5,9179
-Negeri Sembilan,2020,5.5,8686
-Negeri Sembilan,2021,6.5,10366
-Negeri Sembilan,2022,6.8,11022
-Perak,2010,6.5,15440
-Perak,2011,6.7,16012
-Perak,2012,6.8,16395
-Perak,2013,6.7,16386
-Perak,2014,6.9,16925
-Perak,2015,7.0,17159
-Perak,2016,7.2,17820
-Perak,2017,7.2,18047
-Perak,2018,7.4,18600
-Perak,2019,7.5,18740
-Perak,2020,7.2,17946
-Perak,2021,8.5,21303
-Perak,2022,8.9,22341
-Perlis,2010,7.1,1683
-Perlis,2011,6.9,1637
-Perlis,2012,6.9,1655
-Perlis,2013,7.2,1741
-Perlis,2014,6.8,1671
-Perlis,2015,7.1,1767
-Perlis,2016,7.5,1884
-Perlis,2017,8.0,2004
-Perlis,2018,8.1,2042
-Perlis,2019,7.9,1996
-Perlis,2020,6.8,1950
-Perlis,2021,7.8,2234
-Perlis,2022,8.4,2422
-Pulau Pinang,2010,5.8,9063
-Pulau Pinang,2011,5.7,9107
-Pulau Pinang,2012,5.6,9133
-Pulau Pinang,2013,5.7,9538
-Pulau Pinang,2014,5.8,9678
-Pulau Pinang,2015,6.0,10226
-Pulau Pinang,2016,6.2,10729
-Pulau Pinang,2017,6.2,10727
-Pulau Pinang,2018,6.4,11209
-Pulau Pinang,2019,6.2,10896
-Pulau Pinang,2020,6.1,10701
-Pulau Pinang,2021,8.0,13978
-Pulau Pinang,2022,7.4,12920
-Sabah,2010,2.3,7622
-Sabah,2011,2.4,8095
-Sabah,2012,2.3,8066
-Sabah,2013,2.3,8253
-Sabah,2014,3.3,12188
-Sabah,2015,3.4,12511
-Sabah,2016,3.4,12834
-Sabah,2017,3.6,13719
-Sabah,2018,3.6,13940
-Sabah,2019,3.8,14713
-Sabah,2020,4.3,14868
-Sabah,2021,5.5,18873
-Sabah,2022,5.1,17395
-Sarawak,2010,4.2,10396
-Sarawak,2011,4.4,11118
-Sarawak,2012,4.4,11246
-Sarawak,2013,4.3,11231
-Sarawak,2014,4.4,11686
-Sarawak,2015,4.5,12200
-Sarawak,2016,4.6,12608
-Sarawak,2017,4.7,13117
-Sarawak,2018,5.0,13828
-Sarawak,2019,5.0,14025
-Sarawak,2020,5.8,14114
-Sarawak,2021,7.1,17596
-Sarawak,2022,6.7,16627
-Selangor,2010,3.4,18558
-Selangor,2011,3.5,19352
-Selangor,2012,3.7,21020
-Selangor,2013,3.7,21677
-Selangor,2014,3.7,22647
-Selangor,2015,3.9,23804
-Selangor,2016,4.1,25588
-Selangor,2017,4.2,26733
-Selangor,2018,4.2,27387
-Selangor,2019,4.3,27786
-Selangor,2020,3.6,25405
-Selangor,2021,6.0,42051
-Selangor,2022,4.7,32861
-Terengganu,2010,5.6,5864
-Terengganu,2011,5.8,6209
-Terengganu,2012,5.6,6177
-Terengganu,2013,5.8,6424
-Terengganu,2014,5.7,6460
-Terengganu,2015,5.8,6715
-Terengganu,2016,5.8,6843
-Terengganu,2017,5.8,7048
-Terengganu,2018,5.8,7099
-Terengganu,2019,5.9,7341
-Terengganu,2020,5.9,6736
-Terengganu,2021,7.2,8469
-Terengganu,2022,7.3,8686
-W.P. Kuala Lumpur,2010,3.9,6465
-W.P. Kuala Lumpur,2011,4.1,6927
-W.P. Kuala Lumpur,2012,4.1,6996
-W.P. Kuala Lumpur,2013,4.2,7183
-W.P. Kuala Lumpur,2014,4.4,7647
-W.P. Kuala Lumpur,2015,4.3,7608
-W.P. Kuala Lumpur,2016,4.5,8077
-W.P. Kuala Lumpur,2017,4.6,8205
-W.P. Kuala Lumpur,2018,4.7,8485
-W.P. Kuala Lumpur,2019,5.0,8845
-W.P. Kuala Lumpur,2020,4.2,8334
-W.P. Kuala Lumpur,2021,6.8,13334
-W.P. Kuala Lumpur,2022,5.1,9962
-W.P. Labuan,2010,2.8,243
-W.P. Labuan,2011,2.4,218
-W.P. Labuan,2012,2.7,242
-W.P. Labuan,2013,2.7,245
-W.P. Labuan,2014,2.9,274
-W.P. Labuan,2015,2.6,246
-W.P. Labuan,2016,2.9,277
-W.P. Labuan,2017,2.5,247
-W.P. Labuan,2018,2.9,287
-W.P. Labuan,2019,3.0,298
-W.P. Labuan,2020,3.4,319
-W.P. Labuan,2021,5.4,517
-W.P. Labuan,2022,4.0,392
-W.P. Putrajaya,2010,1.3,95
-W.P. Putrajaya,2011,1.5,113
-W.P. Putrajaya,2012,1.8,142
-W.P. Putrajaya,2013,2.1,164
-W.P. Putrajaya,2014,2.4,194
-W.P. Putrajaya,2015,2.3,193
-W.P. Putrajaya,2016,1.9,163
-W.P. Putrajaya,2017,2.6,229
-W.P. Putrajaya,2018,2.2,218
-W.P. Putrajaya,2019,2.0,209
-W.P. Putrajaya,2020,1.9,211
-W.P. Putrajaya,2021,2.3,266
-W.P. Putrajaya,2022,2.2,253
+state,year,death_rate,abs,fertility_rate
+Johor,2010,4.8,16060,2.13
+Johor,2011,4.8,16479,2.17
+Johor,2012,5.0,17201,2.23
+Johor,2013,5.1,17696,2.11
+Johor,2014,5.0,17904,2.16
+Johor,2015,5.2,18853,2.14
+Johor,2016,5.5,19924,2.09
+Johor,2017,5.6,20662,2.12
+Johor,2018,5.6,21117,2.09
+Johor,2019,5.8,21799,2.05
+Johor,2020,5.1,20646,1.94
+Johor,2021,6.7,26951,1.66
+Johor,2022,6.3,25305,1.59
+Kedah,2010,6.0,11674,2.58
+Kedah,2011,6.0,11869,2.61
+Kedah,2012,6.1,12268,2.6
+Kedah,2013,6.1,12516,2.42
+Kedah,2014,6.3,13017,2.47
+Kedah,2015,6.5,13674,2.31
+Kedah,2016,6.5,13771,2.31
+Kedah,2017,6.7,14332,2.31
+Kedah,2018,6.7,14552,2.2
+Kedah,2019,6.6,14302,2.09
+Kedah,2020,6.4,13671,2.03
+Kedah,2021,8.6,18457,2.03
+Kedah,2022,8.1,17628,1.83
+Kelantan,2010,6.2,9798,3.68
+Kelantan,2011,6.2,10024,3.77
+Kelantan,2012,6.0,9890,3.6
+Kelantan,2013,6.0,10042,3.44
+Kelantan,2014,6.1,10588,3.57
+Kelantan,2015,6.1,10789,3.42
+Kelantan,2016,6.0,10809,3.23
+Kelantan,2017,6.1,11203,3.16
+Kelantan,2018,6.1,11316,3.0
+Kelantan,2019,6.1,11410,2.77
+Kelantan,2020,6.1,10928,2.66
+Kelantan,2021,7.7,13926,2.83
+Kelantan,2022,7.3,13445,2.65
+Melaka,2010,5.4,4481,2.12
+Melaka,2011,5.5,4606,2.23
+Melaka,2012,5.4,4575,2.23
+Melaka,2013,5.5,4747,2.06
+Melaka,2014,5.4,4728,2.13
+Melaka,2015,5.6,4959,2.05
+Melaka,2016,5.8,5186,1.96
+Melaka,2017,6.0,5523,1.9
+Melaka,2018,5.9,5407,1.85
+Melaka,2019,6.0,5547,1.78
+Melaka,2020,5.5,5444,1.73
+Melaka,2021,7.1,7083,1.67
+Melaka,2022,6.6,6630,1.66
+Pahang,2010,5.6,5814,2.47
+Pahang,2011,5.6,5885,2.5
+Pahang,2012,5.6,5895,2.48
+Pahang,2013,5.8,6213,2.38
+Pahang,2014,5.9,6410,2.49
+Pahang,2015,6.1,6611,2.39
+Pahang,2016,6.2,6810,2.29
+Pahang,2017,6.4,7111,2.24
+Pahang,2018,6.5,7298,2.15
+Pahang,2019,6.4,7168,2.01
+Pahang,2020,5.8,7011,1.94
+Pahang,2021,7.6,9165,2.18
+Pahang,2022,7.1,8636,2.1
+Negeri Sembilan,2010,5.1,7722,2.27
+Negeri Sembilan,2011,5.1,7812,2.3
+Negeri Sembilan,2012,5.0,7791,2.29
+Negeri Sembilan,2013,5.2,8146,2.2
+Negeri Sembilan,2014,5.2,8301,2.31
+Negeri Sembilan,2015,5.3,8471,2.25
+Negeri Sembilan,2016,5.5,8878,2.17
+Negeri Sembilan,2017,5.6,9261,2.13
+Negeri Sembilan,2018,5.6,9246,2.12
+Negeri Sembilan,2019,5.5,9179,2.0
+Negeri Sembilan,2020,5.5,8686,1.96
+Negeri Sembilan,2021,6.5,10366,1.8
+Negeri Sembilan,2022,6.8,11022,1.72
+Perak,2010,6.5,15440,2.34
+Perak,2011,6.7,16012,2.39
+Perak,2012,6.8,16395,2.35
+Perak,2013,6.7,16386,2.16
+Perak,2014,6.9,16925,2.19
+Perak,2015,7.0,17159,2.13
+Perak,2016,7.2,17820,2.04
+Perak,2017,7.2,18047,1.95
+Perak,2018,7.4,18600,1.85
+Perak,2019,7.5,18740,1.76
+Perak,2020,7.2,17946,1.66
+Perak,2021,8.5,21303,1.81
+Perak,2022,8.9,22341,1.72
+Perlis,2010,7.1,1683,2.6
+Perlis,2011,6.9,1637,2.56
+Perlis,2012,6.9,1655,2.48
+Perlis,2013,7.2,1741,2.35
+Perlis,2014,6.8,1671,2.54
+Perlis,2015,7.1,1767,2.35
+Perlis,2016,7.5,1884,2.28
+Perlis,2017,8.0,2004,2.26
+Perlis,2018,8.1,2042,2.17
+Perlis,2019,7.9,1996,1.98
+Perlis,2020,6.8,1950,1.96
+Perlis,2021,7.8,2234,1.92
+Perlis,2022,8.4,2422,1.68
+Pulau Pinang,2010,5.8,9063,1.56
+Pulau Pinang,2011,5.7,9107,1.62
+Pulau Pinang,2012,5.6,9133,1.7
+Pulau Pinang,2013,5.7,9538,1.48
+Pulau Pinang,2014,5.8,9678,1.56
+Pulau Pinang,2015,6.0,10226,1.49
+Pulau Pinang,2016,6.2,10729,1.44
+Pulau Pinang,2017,6.2,10727,1.39
+Pulau Pinang,2018,6.4,11209,1.32
+Pulau Pinang,2019,6.2,10896,1.28
+Pulau Pinang,2020,6.1,10701,1.25
+Pulau Pinang,2021,8.0,13978,1.23
+Pulau Pinang,2022,7.4,12920,1.17
+Sabah,2010,2.3,7622,1.84
+Sabah,2011,2.4,8095,1.81
+Sabah,2012,2.3,8066,1.84
+Sabah,2013,2.3,8253,1.68
+Sabah,2014,3.3,12188,1.66
+Sabah,2015,3.4,12511,1.55
+Sabah,2016,3.4,12834,1.44
+Sabah,2017,3.6,13719,1.43
+Sabah,2018,3.6,13940,1.43
+Sabah,2019,3.8,14713,1.41
+Sabah,2020,4.3,14868,1.33
+Sabah,2021,5.5,18873,1.39
+Sabah,2022,5.1,17395,1.44
+Sarawak,2010,4.2,10396,2.18
+Sarawak,2011,4.4,11118,2.23
+Sarawak,2012,4.4,11246,2.16
+Sarawak,2013,4.3,11231,1.95
+Sarawak,2014,4.4,11686,1.96
+Sarawak,2015,4.5,12200,1.86
+Sarawak,2016,4.6,12608,1.74
+Sarawak,2017,4.7,13117,1.69
+Sarawak,2018,5.0,13828,1.62
+Sarawak,2019,5.0,14025,1.59
+Sarawak,2020,5.8,14114,1.53
+Sarawak,2021,7.1,17596,1.59
+Sarawak,2022,6.7,16627,1.56
+Selangor,2010,3.4,18558,1.91
+Selangor,2011,3.5,19352,1.96
+Selangor,2012,3.7,21020,2.0
+Selangor,2013,3.7,21677,1.82
+Selangor,2014,3.7,22647,1.86
+Selangor,2015,3.9,23804,1.81
+Selangor,2016,4.1,25588,1.73
+Selangor,2017,4.2,26733,1.7
+Selangor,2018,4.2,27387,1.67
+Selangor,2019,4.3,27786,1.57
+Selangor,2020,3.6,25405,1.57
+Selangor,2021,6.0,42051,1.54
+Selangor,2022,4.7,32861,1.46
+Terengganu,2010,5.6,5864,3.48
+Terengganu,2011,5.8,6209,3.46
+Terengganu,2012,5.6,6177,3.49
+Terengganu,2013,5.8,6424,3.32
+Terengganu,2014,5.7,6460,3.38
+Terengganu,2015,5.8,6715,3.36
+Terengganu,2016,5.8,6843,3.24
+Terengganu,2017,5.8,7048,3.16
+Terengganu,2018,5.8,7099,3.11
+Terengganu,2019,5.9,7341,2.9
+Terengganu,2020,5.9,6736,2.86
+Terengganu,2021,7.2,8469,3.04
+Terengganu,2022,7.3,8686,2.88
+Kuala Lumpur,2010,3.9,6465,1.55
+Kuala Lumpur,2011,4.1,6927,1.58
+Kuala Lumpur,2012,4.1,6996,1.65
+Kuala Lumpur,2013,4.2,7183,1.52
+Kuala Lumpur,2014,4.4,7647,1.6
+Kuala Lumpur,2015,4.3,7608,1.5
+Kuala Lumpur,2016,4.5,8077,1.51
+Kuala Lumpur,2017,4.6,8205,1.46
+Kuala Lumpur,2018,4.7,8485,1.47
+Kuala Lumpur,2019,5.0,8845,1.68
+Kuala Lumpur,2020,4.2,8334,1.49
+Kuala Lumpur,2021,6.8,13334,1.21
+Kuala Lumpur,2022,5.1,9962,1.19
+Labuan,2010,2.8,243,1.98
+Labuan,2011,2.4,218,2.05
+Labuan,2012,2.7,242,2.04
+Labuan,2013,2.7,245,2.0
+Labuan,2014,2.9,274,2.05
+Labuan,2015,2.6,246,2.13
+Labuan,2016,2.9,277,1.89
+Labuan,2017,2.5,247,1.82
+Labuan,2018,2.9,287,1.8
+Labuan,2019,3.0,298,1.8
+Labuan,2020,3.4,319,1.88
+Labuan,2021,5.4,517,1.79
+Labuan,2022,4.0,392,1.6
+Putrajaya,2010,1.3,95,2.4
+Putrajaya,2011,1.5,113,2.65
+Putrajaya,2012,1.8,142,2.87
+Putrajaya,2013,2.1,164,2.64
+Putrajaya,2014,2.4,194,2.85
+Putrajaya,2015,2.3,193,2.72
+Putrajaya,2016,1.9,163,2.56
+Putrajaya,2017,2.6,229,2.56
+Putrajaya,2018,2.2,218,2.63
+Putrajaya,2019,2.0,209,3.26
+Putrajaya,2020,1.9,211,2.78
+Putrajaya,2021,2.3,266,1.86
+Putrajaya,2022,2.2,253,1.76
