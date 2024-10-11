@@ -3,7 +3,7 @@
     "vconcat": [
       {
         "title": "Total Fertility Rate in Each State (2022)",
-        "width": 900,
+        "width": 500,
         "height": 400,
         "projection": {"type": "equalEarth"},
         "data": {
