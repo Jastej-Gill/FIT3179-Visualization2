@@ -1,7 +1,11 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "A dual axis stacked area chart comparing median income and fertility rate in 2022",
+<<<<<<< HEAD
   "width": "container",
+=======
+  "width": 300,
+>>>>>>> 3a8a77de787549cdec5d458cec21545281c149f4
   "height": 600,
   "data": {
     "url": "https://raw.githubusercontent.com/Jastej-Gill/FIT3179-Visualization2/refs/heads/main/data/median_income_fertility_rate_2022.csv",
