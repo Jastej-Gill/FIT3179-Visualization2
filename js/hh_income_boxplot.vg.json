@@ -116,7 +116,7 @@
       "mark": {
         "type": "text",
         "align": "left",
-        "dx": 80,
+        "dx": 20,
         "dy": -8,
         "baseline": "middle",
         "fontStyle": "italic"

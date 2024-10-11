@@ -1,0 +1,25 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": "container",  
+    "height": 80, 
+    "data": {
+      "url": "https://raw.githubusercontent.com/Jastej-Gill/FIT3179-Visualization2/refs/heads/main/data/filtered_death_state.csv",
+      "format": {"type": "csv"}
+    },
+    "transform": [
+      {"calculate": "datum.death_rate - datum.fertility_rate", "as": "difference"},
+      {
+        "aggregate": [
+          {"op": "mean", "field": "difference", "as": "avg_difference"}
+        ],
+        "groupby": ["year"]
+      }
+    ],
+    "mark": "area",
+    "encoding": {
+      "x": {"field": "year", "type": "ordinal", "axis": {"title": "Year"}},
+      "y": {"field": "avg_difference", "type": "quantitative", "axis": {"title": "Average Difference"}}
+    },
+    "title": "Average Difference Between Death Rate and Fertility Rate (2010-2022)"
+  }
+  
