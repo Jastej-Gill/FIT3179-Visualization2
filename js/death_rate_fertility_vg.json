@@ -65,7 +65,7 @@
       }
     ],
     "title": "Death Rate vs Fertility Rate by State",
-    "width": 800,
+    "width": "container",
     "height": 400,
     "config": {
       "axis": {
