@@ -33,12 +33,14 @@ main {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    overflow: hidden; /* Prevents overflow */
 }
 
 .charts {
     flex: 1;
     display: flex;
     flex-direction: column;
+    min-width: 0; /* Ensures the flex item can shrink */
 }
 
 .chart {
@@ -48,11 +50,7 @@ main {
 .text-right, .text-left, .text-below {
     flex: 1;
     padding-left: 20px;
-}
-
-.text-right, .text-left, .text-below {
-    flex: 1;
-    padding-left: 20px;
+    min-width: 0; /* Ensures the flex item can shrink */
 }
 
 .text-below {
@@ -69,6 +67,28 @@ section p {
     font-size: 1em;
     line-height: 1.6;
 }
+
+.select-year {
+    appearance: none;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .select-year:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  }
+  
+  .select-year option {
+    background-color: white;
+    color: black;
+  }
 
 @media (max-width: 768px) {
     .chart-and-text {
