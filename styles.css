@@ -50,6 +50,11 @@ main {
     padding-left: 20px;
 }
 
+.text-on-chart {
+    flex: 1;
+    flex-direction: column;
+}
+
 .text-below {
     padding-top: 20px;
 }
