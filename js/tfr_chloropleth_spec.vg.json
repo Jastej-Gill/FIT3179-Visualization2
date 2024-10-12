@@ -81,10 +81,12 @@
           "Perlis", "Pulau Pinang", "Sabah", 
           "Sarawak", "Selangor", "Terengganu", 
           "Kuala Lumpur", "Labuan", "Putrajaya"
-          
         ],
         "name": "Map Centre: "
       }
     }
-  ]
+  ],
+  "config": {
+    "background": "#e0e0e0" 
+  }
 }
