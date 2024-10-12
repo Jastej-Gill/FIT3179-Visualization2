@@ -105,7 +105,7 @@
           "filter": "datum.ranking == 8"
         },
         {
-          "calculate": "'The state with highest fertility rate has a median income of;' + datum['median_numeric']",
+          "calculate": "'The state with highest fertility rate has a median income of MYR;' + datum['median_numeric']",
           "as": "text_annotation_raw"
         },
         {
