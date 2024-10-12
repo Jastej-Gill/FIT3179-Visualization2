@@ -19,6 +19,7 @@
             <h2>Death and Fertility Rates</h2>
             <div class="chart-and-text">
                 <div id="chart1" class="chart"></div>
+                <div id="chart5" class="chart"></div> <!-- Added chart5 here -->
                 <div class="text-right">
                     <h3>Total Fertility Rate</h3>
                     <p>Total fertility rate is the total number of children born to a woman during her child bearing years experiencing the age specific fertility Rate.</p>
@@ -66,13 +67,14 @@
         const chart2Url = 'https://raw.githubusercontent.com/Jastej-Gill/FIT3179-Visualization2/refs/heads/main/js/hh_income_boxplot.vg.json';
         const chart3Url = 'https://raw.githubusercontent.com/Jastej-Gill/FIT3179-Visualization2/refs/heads/main/js/tfr_chloropleth_spec.vg.json';
         const chart4Url = 'https://raw.githubusercontent.com/Jastej-Gill/FIT3179-Visualization2/refs/heads/main/js/median_income_tfr_2022.vg.json';
-        const chart5Url = 'https://raw.githubusercontent.com/Jastej-Gill/FIT3179-Visualization2/refs/heads/main/js/median_income_tfr_2022.vg.json';
+        const chart5Url = 'https://raw.githubusercontent.com/Jastej-Gill/FIT3179-Visualization2/refs/heads/main/js/death_rate_tfr_diff.vg.json';
 
 
         vegaEmbed('#chart1', chart1Url).catch(console.error);
         vegaEmbed('#chart2', chart2Url).catch(console.error);
         vegaEmbed('#chart3', chart3Url).catch(console.error);
         vegaEmbed('#chart4', chart4Url).catch(console.error);
+        vegaEmbed('#chart5', chart5Url).catch(console.error); \
     </script>
 </body>
 </html>
