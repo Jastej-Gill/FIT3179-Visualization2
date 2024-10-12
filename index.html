@@ -40,9 +40,6 @@
                                 
                             </p>                            
                         </div>
-
-                        <!-- <img src="https://focusmalaysia.my/wp-content/uploads/Elderly-Bernama.jpg" alt="Descriptive text about the image" style="max-width: 30%; max-height: 30%;"> -->
-
                     </div>
                 </div>
             </div>
@@ -90,9 +87,18 @@
             </div>
         </section>
 
-        <section>
+        <section class="chart-container">
             <h2>The Future</h2>
-            <p>The correlation between higher household incomes and lower fertility rates in Malaysia is likely to have significant implications for the country’s future. As wealthier states continue to experience lower fertility rates, Malaysia may face an aging population with a smaller workforce. This demographic shift could lead to increased pressure on social services and healthcare systems, as well as potential challenges in sustaining economic growth. However, it also presents opportunities for Malaysia to invest in education, healthcare, and technology to enhance productivity and support an aging population. Additionally, the trend towards smaller families may result in higher investments per child, leading to a more educated and skilled workforce in the long term. Overall, these changes will require strategic planning and policy adjustments to ensure sustainable development and economic stability.</p>
+            <div class="chart-and-text">
+                <div class="charts">
+                    <div id="chart6" class="chart"></div>
+                </div>
+                <div class="text-left">
+                    <p>The correlation between higher household incomes and lower fertility rates in Malaysia is likely to have significant implications for the country’s future. As wealthier states continue to experience lower fertility rates, Malaysia may face an aging population with a smaller workforce. This demographic shift could lead to increased pressure on social services and healthcare systems, as well as potential challenges in sustaining economic growth. However, it also presents opportunities for Malaysia to invest in education, healthcare, and technology to enhance productivity and support an aging population. Additionally, the trend towards smaller families may result in higher investments per child, leading to a more educated and skilled workforce in the long term. Overall, these changes will require strategic planning and policy adjustments to ensure sustainable development and economic stability.</p>
+                    <img src="https://focusmalaysia.my/wp-content/uploads/Elderly-Bernama.jpg" alt="Descriptive text about the image" style="max-width: 60%; max-height: 60%;text-align: center;">
+
+                </div>
+            </div>
         </section>
     </main>
 
@@ -102,12 +108,15 @@
         const chart3Url = 'https://raw.githubusercontent.com/Jastej-Gill/FIT3179-Visualization2/refs/heads/main/js/tfr_chloropleth_spec.vg.json';
         const chart4Url = 'https://raw.githubusercontent.com/Jastej-Gill/FIT3179-Visualization2/refs/heads/main/js/median_income_tfr_2022.vg.json';
         const chart5Url = 'https://raw.githubusercontent.com/Jastej-Gill/FIT3179-Visualization2/refs/heads/main/js/death_rate_tfr_diff.vg.json';
+        const chart6Url = 'https://raw.githubusercontent.com/Jastej-Gill/FIT3179-Visualization2/refs/heads/main/js/population_growth_line_chart.vg.json';
 
         vegaEmbed('#chart1', chart1Url).catch(console.error);
         vegaEmbed('#chart2', chart2Url).catch(console.error);
         vegaEmbed('#chart3', chart3Url).catch(console.error);
         vegaEmbed('#chart4', chart4Url).catch(console.error);
         vegaEmbed('#chart5', chart5Url).catch(console.error);
+        vegaEmbed('#chart6', chart6Url).catch(console.error);
+
     </script>
 </body>
 </html>
