@@ -3,7 +3,11 @@
   "title": "Total Fertility Rate in Each State (2022)",
   "width": "container",
   "height": 400,
-  "projection": {"type": "equalEarth"},
+  "projection": {
+    "type": "equalEarth",
+    "center": {"expr": "center_to"},
+    "scale": {"expr": "zoom_level"}
+  },
   "data": {
     "url": "https://raw.githubusercontent.com/Jastej-Gill/FIT3179-Visualization2/refs/heads/main/js/ne_1.json",
     "format": {"type": "topojson", "feature": "ne_malaysia_10m"}
@@ -27,11 +31,60 @@
     "color": {
       "field": "fertility_rate",
       "type": "quantitative",
-      "scale": {"type": "linear"}
+      "scale": {"type": "linear"},
+      "title": "Fertility Rate",
+      "legend": {"orient": "bottom-left"}
     },
     "tooltip": [
       {"field": "properties.name", "type": "nominal", "title": "State"},
       {"field": "fertility_rate", "type": "quantitative", "title": "Fertility Rate"}
     ]
-  }
+  },
+  "params": [
+    {
+      "name": "zoom_level",
+      "value": 1600,
+      "bind": {
+        "input": "range",
+        "min": 1000,
+        "max": 60000,
+        "step": 100,
+        "name": "Zoom: "
+      }
+    },
+    {
+      "name": "center_to",
+      "value": [109.5, 2.93527], 
+      "bind": {
+        "input": "select",
+        "options": [
+          [109.5, 4], 
+          [103.366585, 1.937344],   
+          [100.569649, 6.155672],   
+          [102.238068, 6.125397],   
+          [102.246461, 2.206414],   
+          [102.252502, 2.731813],   
+          [102.438057, 3.974341],   
+          [101.117577, 4.693950],   
+          [100.216599, 6.443589],   
+          [100.456238, 5.285153],   
+          [116.796783, 5.420404],  
+          [113.035984, 3.166407],   
+          [101.524803, 3.509247],   
+          [103.447887, 4.233242],  
+          [101.693207, 3.140853],   
+          [115.2308, 5.2831]  
+        ],
+        "labels": [
+          "Center of Malaysia", "Johor", "Kedah", "Kelantan", "Melaka", 
+          "Negeri Sembilan", "Pahang", "Perak", 
+          "Perlis", "Pulau Pinang", "Sabah", 
+          "Sarawak", "Selangor", "Terengganu", 
+          "Kuala Lumpur", "Labuan", "Putrajaya"
+          
+        ],
+        "name": "Map Centre: "
+      }
+    }
+  ]
 }
