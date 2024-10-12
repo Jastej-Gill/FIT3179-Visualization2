@@ -31,7 +31,8 @@
         },
         "tooltip": [
           {"field": "state", "type": "nominal", "title": "State"},
-          {"field": "median_income_numeric", "type": "quantitative", "title": "Median Income (MYR)"}
+          {"field": "median_income_numeric", "type": "quantitative", "title": "Median Income (MYR)"},
+          {"field": "fertility_rate", "type": "quantitative", "title": "Fertility Rate"}
         ]
       }
     },
@@ -46,6 +47,7 @@
         },
         "tooltip": [
           {"field": "state", "type": "nominal", "title": "State"},
+          {"field": "median_income_numeric", "type": "quantitative", "title": "Median Income (MYR)"},
           {"field": "fertility_rate", "type": "quantitative", "title": "Fertility Rate"}
         ]
       }
