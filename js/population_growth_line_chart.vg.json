@@ -1,0 +1,46 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Diverging Population Growth",
+    "width":"container",
+    "height":500,
+    "data": {
+      "url": "https://raw.githubusercontent.com/Jastej-Gill/FIT3179-Visualization2/refs/heads/main/data/population_state_filtered_grouped_split.csv",
+      "format": {"type": "csv"}
+    },
+    "transform": [
+      {
+        "calculate": "datum.age_group == '0-9' || datum.age_group == '10-19' ? '0-19' : '20-85+'",
+        "as": "category"
+      },
+      {
+        "aggregate": [{"op": "sum", "field": "population", "as": "population"}],
+        "groupby": ["year", "category"]
+      },
+      {
+        "window": [{"op": "sum", "field": "population", "as": "total_population"}],
+        "frame": [null, null],
+        "groupby": ["year"]
+      },
+      {
+        "calculate": "datum.population / datum.total_population * 100",
+        "as": "population_percentage"
+      }
+    ],
+    "mark": "line",
+    "encoding": {
+      "x": {"field": "year", "type": "ordinal", "title": "Year"},
+      "y": {"field": "population_percentage", "type": "quantitative", "title": "Population Growth (%)"},
+      "color": {"field": "category", "type": "nominal", "title": "Age Groups (years old)"}
+    },
+    "config": {
+      "axis": {
+        "labelFontSize": 12,
+        "titleFontSize": 14
+      },
+      "legend": {
+        "titleFontSize": 14,
+        "labelFontSize": 12
+      }
+    }
+  }
+  
