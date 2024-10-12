@@ -8,32 +8,10 @@
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
-    <style>
-        .chart-container {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .chart-and-text {
-            display: flex;
-            width: 100%;
-        }
-        .charts {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-        }
-        .chart {
-            margin-bottom: 20px;
-        }
-        .text-right {
-            flex: 1;
-            padding-left: 20px;
-        }
-    </style>
 </head>
 <body>
     <header>
-      
+        <h1>Data Visualization Dashboard</h1>
     </header>
 
     <main>
@@ -57,35 +35,26 @@
 
         <section class="chart-container">
             <h2>Geographical Data</h2>
-            <div id="chart2" class="chart left"></div>
-            <div class="charts">
-                <div class="right"></div>
+            <div id="chart2" class="chart"></div>
+            <div id="chart3" class="chart"></div>
+            <div class="text-below">
                 <h3>How does economical growth affect fertility?</h3>
                 <p>The fertility rates in more economically developed states as Selangor and Kuala Lumpur are significantly lower despite having the highest household income. Meanwhile states like Terengganu and Kelantan have much higher rates of fertility despite falling behind in terms of household income.</p>
-                </div>            
-                <div id="chart3" class="chart"></div>
             </div>
-
-            <div class="clear"></div>
         </section>
 
         <section class="chart-container">
             <h2>Further Comparison</h2>
-            <div id="chart4" class="chart right"></div>
-            <div class="left">
-                <h3>Highlighting the Corellation</h3>
-                <p>In Malaysia, the correlation between household income and fertility rate is evident across various states. Wealthier states such as Selangor and Kuala Lumpur typically exhibit lower fertility rates compared to less affluent states like Kelantan and Terengganu. This trend can be attributed to several factors. Higher household incomes often come with increased costs of living, prompting families to have fewer children to manage expenses more effectively. Additionally, higher income levels are associated with greater female participation in the workforce and higher educational attainment, both of which contribute to delayed marriage and childbirth. Access to comprehensive healthcare and family planning services is also more prevalent in wealthier states, allowing families to make informed decisions about family size. Urbanization in these states further influences smaller family sizes due to limited living space and diverse career opportunities. Overall, the economic development in wealthier Malaysian states drives a cultural shift towards smaller families, highlighting the complex interplay between income and fertility rates.
-                </p>
+            <div id="chart4" class="chart"></div>
+            <div class="text-left">
+                <h3>Highlighting the Correlation</h3>
+                <p>In Malaysia, the correlation between household income and fertility rate is evident across various states. Wealthier states such as Selangor and Kuala Lumpur typically exhibit lower fertility rates compared to less affluent states like Kelantan and Terengganu. This trend can be attributed to several factors. Higher household incomes often come with increased costs of living, prompting families to have fewer children to manage expenses more effectively. Additionally, higher income levels are associated with greater female participation in the workforce and higher educational attainment, both of which contribute to delayed marriage and childbirth. Access to comprehensive healthcare and family planning services is also more prevalent in wealthier states, allowing families to make informed decisions about family size. Urbanization in these states further influences smaller family sizes due to limited living space and diverse career opportunities. Overall, the economic development in wealthier Malaysian states drives a cultural shift towards smaller families, highlighting the complex interplay between income and fertility rates.</p>
             </div>
-            <div class="clear"></div>
         </section>
 
         <section>
             <h2>The Future</h2>
-            <p>The correlation between higher household incomes and lower fertility rates in Malaysia is likely to have significant implications for the country’s future. As wealthier states continue to experience lower fertility rates, Malaysia may face an aging population with a smaller workforce. This demographic shift could lead to increased pressure on social services and healthcare systems, as well as potential challenges in sustaining economic growth. However, it also presents opportunities for Malaysia to invest in education, healthcare, and technology to enhance productivity and support an aging population. Additionally, the trend towards smaller families may result in higher investments per child, leading to a more educated and skilled workforce in the long term. Overall, these changes will require strategic planning and policy adjustments to ensure sustainable development and economic stability.
-
-
-            </p>
+            <p>The correlation between higher household incomes and lower fertility rates in Malaysia is likely to have significant implications for the country’s future. As wealthier states continue to experience lower fertility rates, Malaysia may face an aging population with a smaller workforce. This demographic shift could lead to increased pressure on social services and healthcare systems, as well as potential challenges in sustaining economic growth. However, it also presents opportunities for Malaysia to invest in education, healthcare, and technology to enhance productivity and support an aging population. Additionally, the trend towards smaller families may result in higher investments per child, leading to a more educated and skilled workforce in the long term. Overall, these changes will require strategic planning and policy adjustments to ensure sustainable development and economic stability.</p>
         </section>
     </main>
 
@@ -96,12 +65,11 @@
         const chart4Url = 'https://raw.githubusercontent.com/Jastej-Gill/FIT3179-Visualization2/refs/heads/main/js/median_income_tfr_2022.vg.json';
         const chart5Url = 'https://raw.githubusercontent.com/Jastej-Gill/FIT3179-Visualization2/refs/heads/main/js/death_rate_tfr_diff.vg.json';
 
-
         vegaEmbed('#chart1', chart1Url).catch(console.error);
         vegaEmbed('#chart2', chart2Url).catch(console.error);
         vegaEmbed('#chart3', chart3Url).catch(console.error);
         vegaEmbed('#chart4', chart4Url).catch(console.error);
-        vegaEmbed('#chart5', chart5Url).catch(console.error); // Embedding chart5 here
+        vegaEmbed('#chart5', chart5Url).catch(console.error);
     </script>
 </body>
 </html>

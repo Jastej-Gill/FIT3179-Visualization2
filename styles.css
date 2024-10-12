@@ -1,22 +1,24 @@
-#symbol_map {
-    top: 100px;
-    bottom: 100px; 
-    left: 100px;
-    right: 100px;
-    /*height: 1000px;
-    width: 800px;*/
-}
-
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
+    margin: 0;
+    padding: 0;
     background-color: #f4f4f9;
     color: #333;
 }
 
-h1 {
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
     text-align: center;
-    color: #444;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
 }
 
 .chart-container {
@@ -29,12 +31,8 @@ h1 {
 
 .chart-and-text {
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-start;
-}
-
-.chart {
-    margin: 20px 0;
-    flex: 1;
 }
 
 .charts {
@@ -43,24 +41,17 @@ h1 {
     flex-direction: column;
 }
 
-.text-right {
-    margin-left: 20px;
+.chart {
+    margin-bottom: 20px;
+}
+
+.text-right, .text-left, .text-below {
     flex: 1;
+    padding-left: 20px;
 }
 
-.left {
-    float: left;
-    width: 45%;
-    margin-right: 0%;
-}
-
-.right {
-    float: right;
-    width: 45%;
-}
-
-.clear {
-    clear: both;
+.text-below {
+    padding-top: 20px;
 }
 
 section h2 {
@@ -74,3 +65,13 @@ section p {
     line-height: 1.6;
 }
 
+@media (max-width: 768px) {
+    .chart-and-text {
+        flex-direction: column;
+    }
+
+    .text-right, .text-left {
+        padding-left: 0;
+        padding-top: 20px;
+    }
+}
