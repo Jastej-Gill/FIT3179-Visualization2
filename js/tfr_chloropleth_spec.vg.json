@@ -32,7 +32,7 @@
       "field": "fertility_rate",
       "type": "quantitative",
       "scale": {
-        "scheme": "redblue" 
+        "scheme": "blues" 
       },
       "title": "Fertility Rate",
       "legend": {"orient": "bottom-left"}
