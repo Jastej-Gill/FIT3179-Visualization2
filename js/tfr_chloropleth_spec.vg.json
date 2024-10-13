@@ -31,7 +31,9 @@
     "color": {
       "field": "fertility_rate",
       "type": "quantitative",
-      "scale": {"type": "linear"},
+      "scale": {
+        "scheme": "redblue" 
+      },
       "title": "Fertility Rate",
       "legend": {"orient": "bottom-left"}
     },

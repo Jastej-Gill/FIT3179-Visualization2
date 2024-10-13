@@ -1,5 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Comparing Household Income and Total Fertility Rate in each State (2022)",
   "description": "A dual axis stacked area chart comparing median income and fertility rate in 2022",
   "width": "container",
   "height": 400,

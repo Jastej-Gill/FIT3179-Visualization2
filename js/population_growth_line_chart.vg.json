@@ -1,8 +1,8 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": "Diverging Population Growth",
-    "width":"container",
-    "height":500,
+    "width": "container",
+    "height": 500,
     "data": {
       "url": "https://raw.githubusercontent.com/Jastej-Gill/FIT3179-Visualization2/refs/heads/main/data/population_state_filtered_grouped_split.csv",
       "format": {"type": "csv"}
@@ -26,11 +26,24 @@
         "as": "population_percentage"
       }
     ],
-    "mark": "line",
+    "mark": {
+      "type": "line",
+      "tooltip": true  
+    },
     "encoding": {
       "x": {"field": "year", "type": "ordinal", "title": "Year"},
-      "y": {"field": "population_percentage", "type": "quantitative", "title": "Population Growth (%)"},
-      "color": {"field": "category", "type": "nominal", "title": "Age Groups (years old)"}
+      "y": {
+        "field": "population_percentage",
+        "type": "quantitative",
+        "title": "Population Growth (%)",
+        "scale": {"domain": [25, 75]} 
+      },
+      "color": {
+        "field": "category",
+        "type": "nominal",
+        "title": "Age Groups (years old)",
+        "scale": {"range": ["#D55E00", "#0072B2"]} 
+      }
     },
     "config": {
       "axis": {

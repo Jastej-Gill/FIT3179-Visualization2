@@ -13,7 +13,7 @@
     <header>
         <div class="header-content">
             <h1>Mapping Malaysia’s Future</h1>
-            <h2>Visualizing Fertility across States</h2>
+            <h3>Visualizing Fertility across States</h3>
         </div>
     </header>
 
@@ -25,65 +25,62 @@
                     <div id="chart1" class="chart"></div>
                 </div>
                 <div class="text-right">
-                    <h3>Total Fertility Rate</h3>
+                    <h4>Total Fertility Rate</h4>
                     <p>Total fertility rate is the total number of children born to a woman during her child bearing years experiencing the age specific fertility Rate.</p>
-                    <h3>Death Rate</h3>
+                    <h4>Death Rate</h4>
                     <p>Death rate is the number of deaths per 1000 population</p>
                     <h3>Death Rate VS Fertility Rate</h3>
-                    <div class="chart-and-text">
-                        <div class="charts">
-                            <img src="https://media2.malaymail.com/uploads/articles/2014-05/babies.jpeg" alt="Descriptive text about the image">  
-                        </div>                        
-                        <div class="text-right">
-                            <p>As the years progress, the gap between the death and fertility rate continues to grow larger which is evident in 2022 as in this year no state have fertility rates that exceed
+                    <p>As the years progress, the gap between the death and fertility rate continues to grow larger which is evident in 2022 as in this year no state have fertility rates that exceed
                                 the death rate which is an indicator of potential demographic collapse. As the population continues to age with the number of newborns decreasing.
                                 
-                            </p>                            
+                    </p>               
+                    <div class="chart-and-text"></div>
+                        <div class="charts">
+                            <div id="chart5" class="chart"></div>
+                        </div>
+                    </div>                         
+                </div>
+            </div>
+            <section class="chart-container">
+                <h2>Household Income Comparison</h2>
+                <div class="chart-and-text">
+                    <div class="charts" style="min-width: 70%;">
+                        <div id="chart2" class="chart"></div>
+                    </div>
+                    <div class="text-right">
+                        <h3>Economic Disparity</h3>
+                        <p>The chart highlights disparities in household income across states with the <b>box height scaled to state population numbers</b>.</p>
+                        <p>Variation in income reflects economic development of each state with less industrialized states like Kelantan, Kedah and Perak lagging behind.</p>
+                        <p><b>Disparities</b> also <b>exist within each state</b> as the top 3 states, Selangor, Kuala Lumpur and Putrajaya display much broader ranges of income in comparison to the other states.</p>
+                        <div class="image-container">
+                            <figure>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Kuala_Lumpur_Skyline_at_dusk_1.jpg/350px-Kuala_Lumpur_Skyline_at_dusk_1.jpg" alt="Image 1">
+                                <figcaption>Kuala Lumpur skyline at dusk</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="https://prestige-sky-b10-unit-1-kota-bharu-my-15000.booked.net/data/Photos/OriginalPhoto/12397/1239751/1239751024/Prestige-Sky-Riverfront-Apartment-Kota-Bharu-Exterior.JPEG" alt="Image 2">
+                                <figcaption>Capital city of Kelantan, Kota Bharu</figcaption>
+                            </figure>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div style="margin-bottom: 5%;"></div>
-
-            <div class="chart-and-text">
+            </section>
+            <section class="chart-container">    
+                <h2>Difference in Total Fertility Rates</h2>       
                 <div class="charts">
-                    <div id="chart5" class="chart"></div>
+                    <div id="chart3" class="chart map"style="padding: 1%;"></div>
                 </div>
-            </div>
-        </section>
-
+                <div class="text-below" style="text-align: center;">
+                    <p>States located in the north west of the Malaysian Peninsula display much higher rates in comparison to the rest of Malaysia, with Kuala Lumpur and Pulau Pinang having fertility rates that are almost two times lower in comparison.</p>
+                </div>
+            </section>
         <section class="chart-container">
-            <h2>Geographical Data</h2>
-            <div class="chart-and-text">
-                <div class="charts">
-                    <div id="chart2" class="chart"></div>
-                </div>
-                <div class="text-right">
-                    <h3>Total Fertility Rate</h3>
-                    <p>Total fertility rate is the total number of children born to a woman during her child bearing years experiencing the age specific fertility Rate.</p>
-                    <h3>Death Rate</h3>
-                    <p>Death rate is the number of deaths per 1000 population</p>
-                    <h3>Death Rate VS Fertility Rate</h3>
-                    <p>As the years progress, the gap between the death and fertility rate continues to grow larger which is evident in 2022 as in this year no state have fertility rates that exceed the death rate which is an indicator of potential demographic collapse.</p>
-                </div>
-            </div>
-            <div class="charts">
-                <div id="chart3" class="chart map"></div>
-            </div>
-            <div class="text-below">
-                <h3>How does economical growth affect fertility?</h3>
-                <p>The fertility rates in more economically developed states as Selangor and Kuala Lumpur are significantly lower despite having the highest household income. Meanwhile states like Terengganu and Kelantan have much higher rates of fertility despite falling behind in terms of household income.</p>
-            </div>
-        </section>
-
-        <section class="chart-container">
-            <h2>Further Comparison</h2>
+            <h2>Highlighting the Correlation</h2>
             <div class="charts">
                 <div id="chart4" class="chart"></div>
             </div>
             <div class="text-left">
-                <h3>Highlighting the Correlation</h3>
-                <p>In Malaysia, the correlation between household income and fertility rate is evident across various states. Wealthier states such as Selangor and Kuala Lumpur typically exhibit lower fertility rates compared to less affluent states like Kelantan and Terengganu. This trend can be attributed to several factors. Higher household incomes often come with increased costs of living, prompting families to have fewer children to manage expenses more effectively. Additionally, higher income levels are associated with greater female participation in the workforce and higher educational attainment, both of which contribute to delayed marriage and childbirth. Access to comprehensive healthcare and family planning services is also more prevalent in wealthier states, allowing families to make informed decisions about family size. Urbanization in these states further influences smaller family sizes due to limited living space and diverse career opportunities. Overall, the economic development in wealthier Malaysian states drives a cultural shift towards smaller families, highlighting the complex interplay between income and fertility rates.</p>
+                <p>This chart highlights the clear disparity between household income and fertility rates in Malaysia, suggesting that higher-income states tend to have lower fertility rates, likely due to urbanization, higher living costs, and lifestyle choices. On the other hand, states with lower incomes, particularly rural areas, tend to have higher fertility rates, which could be linked to traditional family structures and lower economic pressures.</p>
             </div>
         </section>
 
@@ -94,9 +91,15 @@
                     <div id="chart6" class="chart"></div>
                 </div>
                 <div class="text-left">
-                    <p>The correlation between higher household incomes and lower fertility rates in Malaysia is likely to have significant implications for the country’s future. As wealthier states continue to experience lower fertility rates, Malaysia may face an aging population with a smaller workforce. This demographic shift could lead to increased pressure on social services and healthcare systems, as well as potential challenges in sustaining economic growth. However, it also presents opportunities for Malaysia to invest in education, healthcare, and technology to enhance productivity and support an aging population. Additionally, the trend towards smaller families may result in higher investments per child, leading to a more educated and skilled workforce in the long term. Overall, these changes will require strategic planning and policy adjustments to ensure sustainable development and economic stability.</p>
-                    <img src="https://focusmalaysia.my/wp-content/uploads/Elderly-Bernama.jpg" alt="Descriptive text about the image" style="max-width: 60%; max-height: 60%;text-align: center;">
-
+                    <p>
+                        Given the disparity in the growth for the two age group populations, Malaysia’s future will be significantly shaped by how well it adapts to an aging population and a shrinking younger demographic. While there are clear challenges in areas like the economy, healthcare, and social welfare, there are also opportunities for innovation, policy reforms, and economic diversification. Effective planning, investment in technology, and policies that address the needs of both young and old will be critical for Malaysia’s long-term sustainability and prosperity.
+                    </p>
+                    <div class="image-single">
+                        <figure>
+                            <img src="https://focusmalaysia.my/wp-content/uploads/Elderly-Bernama.jpg" alt="Future Image">
+                            <figcaption>The Future of Malaysia</figcaption>
+                        </figure>
+                    </div>
                 </div>
             </div>
         </section>

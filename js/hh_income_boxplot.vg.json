@@ -40,6 +40,7 @@
         "tooltip": [
           {"field": "min", "type": "quantitative", "title": "Min Income (MYR)"},
           {"field": "max", "type": "quantitative", "title": "Max Income (MYR)"},
+          {"field": "median_numeric", "type": "quantitative", "title": "Median Income (MYR)"},
           {"field": "population", "type": "quantitative", "title": "Population (in thousands)"}
         ]
       }
@@ -54,7 +55,17 @@
       "encoding": {
         "x": {"field": "first_quartile", "type": "quantitative"},
         "x2": {"field": "third_quartile"},
-        "color": {"field": "state", "type": "nominal", "legend": {"title": "State"}},
+        "color": {
+          "field": "state",
+          "type": "nominal",
+          "legend": {"title": "State"},
+          "scale": {
+            "range": [
+              "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7", "#999999",
+              "#000000", "#E41A1C", "#377EB8", "#4DAF4A", "#984EA3", "#FF7F00", "#FFFF33", "#A65628"
+            ]
+          }
+        },
         "opacity": {
           "condition": {"param": "state_select", "value": 1},
           "value": 0.2
@@ -63,6 +74,7 @@
         "tooltip": [
           {"field": "first_quartile", "type": "quantitative", "title": "1st Quartile (MYR)"},
           {"field": "third_quartile", "type": "quantitative", "title": "3rd Quartile (MYR)"},
+          {"field": "median_numeric", "type": "quantitative", "title": "Median Income (MYR)"},
           {"field": "population", "type": "quantitative", "title": "Population (in thousands)"}
         ]
       }
@@ -82,7 +94,8 @@
       "encoding": {
         "x": {"field": "min", "type": "quantitative"},
         "tooltip": [
-          {"field": "min", "type": "quantitative", "title": "Min Income (MYR)"}
+          {"field": "min", "type": "quantitative", "title": "Min Income (MYR)"},
+          {"field": "median_numeric", "type": "quantitative", "title": "Median Income (MYR)"}
         ]
       }
     },
@@ -91,7 +104,8 @@
       "encoding": {
         "x": {"field": "max", "type": "quantitative"},
         "tooltip": [
-          {"field": "max", "type": "quantitative", "title": "Max Income (MYR)"}
+          {"field": "max", "type": "quantitative", "title": "Max Income (MYR)"},
+          {"field": "median_numeric", "type": "quantitative", "title": "Median Income (MYR)"}
         ]
       }
     },

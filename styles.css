@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background: url('https://www.mhtc.org.my/wp-content/uploads/2017/07/malaysia-population-reaches-32-million.jpg') no-repeat center center;
+    background: url('https://thesun.my/binrepository/kl11-16092022-keretapi-sarong_4158250_20240514160312.jpg') no-repeat center center;
     background-size: cover;
     color: white;
     padding: 60px 20px;
@@ -20,7 +20,7 @@ header {
     border-radius: 8px;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: 'Georgia', serif;
 }
 
@@ -123,4 +123,30 @@ section p {
         padding-left: 0;
         padding-top: 20px;
     }
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.image-container figure {
+    width: 48%; 
+    margin: 0;
+}
+
+.image-container img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-container figcaption {
+    text-align: center;
+    margin-top: 8px;
+    font-size: 0.9em;
+    color: #555;
 }
