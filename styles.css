@@ -131,6 +131,32 @@ section p {
     margin-top: 20px;
 }
 
+.image-single {
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px;
+}
+
+.image-single figure {
+    text-align: center;
+}
+
+.image-single img {
+    width: 100%;
+    max-width: 400px; 
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-single figcaption {
+    text-align: center;
+    margin-top: 8px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+
 .image-container figure {
     width: 48%; 
     margin: 0;
